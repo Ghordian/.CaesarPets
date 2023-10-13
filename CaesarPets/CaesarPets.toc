@@ -1,0 +1,45 @@
+## Interface: 100107
+## Title: CaesarPets
+## Version: 10.1.07.008.1
+## Idea: Cybeloras of Aerie Peak
+## SavedVariables: CaesarPetsDB
+## Author: Ghordian
+## X-Category: Hunter
+## Notes: Condenses your stabled pets onto one single page.
+## X-License: All rights reserved.
+## X-Curse-Project-ID: 0
+## X-WoWI-ID: 26641
+## X-Wago-ID: 0
+
+### LoadManagers: AddonLoader
+### X-LoadOn-Execute: PetStableFrame:HookScript("OnShow", function() if not IsAddOnLoaded("CaesarPets") then AddonLoader:LoadAddOn("CaesarPets") end end)
+
+## OptionalDeps: Ace3, LibWindow-1.1
+
+#@no-lib-strip@
+Libs\LibStub\LibStub.lua
+Libs\CallbackHandler-1.0\CallbackHandler-1.0.xml
+Libs\LibDataBroker-1.1\LibDataBroker-1.1.lua
+
+Libs\AceAddon-3.0\AceAddon-3.0.xml
+Libs\AceEvent-3.0\AceEvent-3.0.xml
+Libs\AceHook-3.0\AceHook-3.0.xml
+Libs\AceDB-3.0\AceDB-3.0.xml
+Libs\AceDBOptions-3.0\AceDBOptions-3.0.xml
+Libs\AceLocale-3.0\AceLocale-3.0.xml
+
+Libs\AceGUI-3.0\AceGUI-3.0.xml
+Libs\AceConsole-3.0\AceConsole-3.0.xml
+Libs\AceConfig-3.0\AceConfig-3.0.xml
+
+Libs\LibWindow-1.1\LibWindow-1.1.lua
+Libs\LibDBIcon-1.0\LibDBIcon-1.0.lua
+#@end-no-lib-strip@
+
+Locale\locale.xml
+
+CaesarPets.lua
+
+Config.lua
+
+Scaling.lua

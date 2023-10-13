@@ -1,0 +1,39 @@
+Author: Ghordian
+Date:   Aug 11 2023
+
+    - TOC bump
+    - Added InfoPanel to show statistical info 
+
+Author: Ghordian
+Date:   Aug 12 2023
+
+    - Added SearchInfo to show found info 
+    - Moved InfoPanel to the bottom-right frame
+
+Author: Ghordian
+Date:   Aug 20 2023
+
+	- Migrated to ACE3 adddon
+    - Added movable option
+    - Added scale option
+	- Added profile option
+	- Added config option
+
+Author: Ghordian
+Date:   Aug 23 2023
+
+    - Added minimap button
+    - Added preview button
+	- Renamed as CaesarPets
+
+Author: Ghordian
+Date:   Sep 07 2023
+
+	- Modified for v10.1.7
+    - TOC bump
+
+Author: Ghordian
+Date:   Oct 12 2023
+
+    - Added Expand/Collapse button
+    - SinglePage shown on the right

@@ -1,0 +1,218 @@
+<Ui xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/ ..\FrameXML\UI.xsd" xmlns="http://www.blizzard.com/wow/ui/">
+	<Button name="AltoSpellButtonTemplate" virtual="true">
+		<Size x="37" y="37" />
+		<Layers>
+			<Layer level="BACKGROUND">
+				<Texture parentKey="Background" inherits="Spellbook-EmptySlot">
+					<Anchors>
+						<Anchor point="CENTER" />
+					</Anchors>
+				</Texture>
+				<Texture parentKey="TextBackground" inherits="Spellbook-TextBackground">
+					<Anchors>
+						<Anchor x="-4" y="-5" point="TOPLEFT" relativeKey="$parent.Background" relativePoint="TOPRIGHT" />
+					</Anchors>
+				</Texture>
+			</Layer>
+			<Layer>
+				<Texture parentKey="Icon" setAllPoints="true" hidden="true" />
+				<FontString parentKey="SpellName" inherits="GameFontNormal" hidden="true" justifyH="LEFT" maxLines="3">
+					<Size x="145" />
+					<Anchors>
+						<Anchor x="8" point="LEFT" relativePoint="RIGHT" />
+					</Anchors>
+				</FontString>
+				<FontString parentKey="SubSpellName" inherits="SubSpellFont" hidden="true" justifyH="LEFT">
+					<Size x="145" y="18" />
+					<Anchors>
+						<Anchor y="2" point="TOPLEFT" relativeKey="$parent.SpellName" relativePoint="BOTTOMLEFT" />
+					</Anchors>
+				</FontString>
+			</Layer>
+			<Layer level="OVERLAY" textureSubLevel="-1">
+				<Texture parentKey="Slot" inherits="Spellbook-SlotFrame">
+					<Anchors>
+						<Anchor x="1" point="CENTER" />
+					</Anchors>
+				</Texture>
+			</Layer>
+		</Layers>
+		<Scripts>
+			<OnLoad>
+
+			</OnLoad>
+			<OnEnter>
+
+			</OnEnter>
+			<OnLeave>
+
+			</OnLeave>
+			<OnClick>
+
+			</OnClick>
+		</Scripts>
+		<HighlightTexture parentKey="Highlight" file="Interface\Buttons\ButtonHilight-Square" alphaMode="ADD" />
+	</Button>
+	<Frame name="HunterBooksTooltip" hidden="true" parent="UIParent" frameStrata="TOOLTIP">
+		<Size x="200" y="220" />
+		<Anchors>
+			<Anchor y="-200" point="TOP" />
+		</Anchors>
+		<Layers>
+			<Layer>
+				<FontString name="$parentTextLeft1" inherits="GameTooltipHeaderText" hidden="true">
+					<Anchors>
+						<Anchor point="TOPLEFT">
+							<Offset>
+								<AbsDimension x="10" y="-10" />
+							</Offset>
+						</Anchor>
+					</Anchors>
+				</FontString>
+				<FontString name="$parentTextRight1" inherits="GameTooltipHeaderText" hidden="true">
+					<Anchors>
+						<Anchor point="RIGHT" relativeTo="$parentTextLeft1" relativePoint="LEFT">
+							<Offset>
+								<AbsDimension x="40" y="0" />
+							</Offset>
+						</Anchor>
+					</Anchors>
+				</FontString>
+				<FontString name="$parentTextLeft2" inherits="GameTooltipText" hidden="true">
+					<Anchors>
+						<Anchor point="TOPLEFT" relativeTo="$parentTextLeft1" relativePoint="BOTTOMLEFT">
+							<Offset>
+								<AbsDimension x="0" y="-2" />
+							</Offset>
+						</Anchor>
+					</Anchors>
+				</FontString>
+			</Layer>
+		</Layers>
+		<Frames>
+			<PlayerModel parentKey="ModelFrame" inherits="ModelTemplate" useParentLevel="true">
+				<Size x="200" y="170" />
+				<Anchors>
+					<Anchor x="-10" y="-50" point="TOPLEFT" relativeTo="HunterPetsOwnedTooltip" relativePoint="TOPLEFT" />
+				</Anchors>
+				<Scripts>
+					<OnLoad>
+
+					</OnLoad>
+				</Scripts>
+			</PlayerModel>
+		</Frames>
+		<Scripts>
+			<OnLoad>
+
+			</OnLoad>
+		</Scripts>
+	</Frame>
+	<Frame framestrata="MEDIUM" name="HunterBooks" inherits="ButtonFrameTemplate" hidden="true" parent="HunterPetJournal">
+		<Size x="405" y="346" />
+		<Anchors>
+			<Anchor y="-80" point="TOPLEFT" relativeTo="HunterPetJournal" relativePoint="TOPRIGHT" />
+		</Anchors>
+		<Layers>
+			<Layer level="OVERLAY" />
+		</Layers>
+		<Frames>
+			<Frame parentKey="Books">
+				<Anchors>
+					<Anchor x="2" y="-23" point="TOPLEFT" relativeTo="$parent" />
+					<Anchor x="-4" y="27" point="BOTTOMRIGHT" relativeTo="$parent" />
+				</Anchors>
+			</Frame>
+			<Button name="HunterBook1" inherits="AltoSpellButtonTemplate" id="1">
+				<Anchors>
+					<Anchor x="15" y="-15" point="TOPLEFT" relativeTo="HunterBooksInset" relativePoint="TOPLEFT" />
+				</Anchors>
+        <Layers>
+          <Layer level="ARTWORK">
+            <Texture name="$parentTexture" parentKey="Texture" 
+                     file="Interface\Icons\Inv_bloodtrollbeast_mount" setAllPoints="true">
+            </Texture>
+          </Layer>
+        </Layers>
+      </Button>
+			<Button name="HunterBook2" inherits="AltoSpellButtonTemplate" id="2">
+				<Anchors>
+					<Anchor x="0" y="-25" point="TOP" relativeTo="HunterBook1" relativePoint="BOTTOM" />
+				</Anchors>
+        <Layers>
+          <Layer level="ARTWORK">
+            <Texture name="$parentTexture" parentKey="Texture" 
+                     file="Interface\Icons\inv_offhand_pvp330_d_02" setAllPoints="true">
+            </Texture>
+          </Layer>
+        </Layers>
+      </Button>
+			<Button name="HunterBook3" inherits="AltoSpellButtonTemplate" id="3">
+				<Anchors>
+					<Anchor x="0" y="-25" point="TOP" relativeTo="HunterBook2" relativePoint="BOTTOM" />
+				</Anchors>
+        <Layers>
+          <Layer level="ARTWORK">
+            <Texture name="$parentTexture" parentKey="Texture" 
+                     file="Interface\Icons\Inv_misc_head_dragon_nexus" setAllPoints="true">
+            </Texture>
+          </Layer>
+        </Layers>
+      </Button>
+			<Button name="HunterBook4" inherits="AltoSpellButtonTemplate" id="4">
+				<Anchors>
+					<Anchor x="0" y="-25" point="TOP" relativeTo="HunterBook3" relativePoint="BOTTOM" />
+				</Anchors>
+        <Layers>
+          <Layer level="ARTWORK">
+            <Texture name="$parentTexture" parentKey="Texture" 
+                     file="Interface\Icons\Inv_deathwargmountblack" setAllPoints="true">
+            </Texture>
+          </Layer>
+        </Layers>
+      </Button>
+      <Button name="HunterSpeel1" inherits="AltoSpellButtonTemplate" id="11">
+        <Anchors>
+          <Anchor x="200" y="-15" point="TOPLEFT" relativeTo="HunterBooksInset" relativePoint="TOPLEFT" />
+        </Anchors>
+        <Layers>
+          <Layer level="ARTWORK">
+            <Texture name="$parentTexture" parentKey="Texture" 
+                     file="Interface\Icons\inv_pet_direhorn" setAllPoints="true">
+            </Texture>
+          </Layer>
+        </Layers>
+      </Button>
+      <Button name="HunterSpeel2" inherits="AltoSpellButtonTemplate" id="12">
+        <Anchors>
+          <Anchor x="0" y="-25" point="TOP" relativeTo="HunterSpeel1" relativePoint="BOTTOM" />
+        </Anchors>
+        <Layers>
+          <Layer level="ARTWORK">
+            <Texture name="$parentTexture" parentKey="Texture" file="Interface\Icons\inv_engineering_mechabond Imprint matrix" setAllPoints="true">
+            </Texture>
+          </Layer>
+        </Layers>
+      </Button>
+      <Button name="HunterSpeel3" inherits="AltoSpellButtonTemplate" id="13">
+        <Anchors>
+          <Anchor x="0" y="-25" point="TOP" relativeTo="HunterSpeel2" relativePoint="BOTTOM" />
+        </Anchors>
+        <Layers>
+          <Layer level="ARTWORK">
+            <Texture name="$parentTexture" parentKey="Texture" file="Interface\Icons\inv_misc_elitehippogryph" setAllPoints="true">
+            </Texture>
+          </Layer>
+        </Layers>
+      </Button>
+    </Frames>
+		<Scripts>
+			<OnShow>
+				ButtonFrameTemplate_HidePortrait(self);
+			</OnShow>
+			<OnLoad>
+				        HunterBooks_OnLoad(self);
+			</OnLoad>
+		</Scripts>
+	</Frame>
+</Ui>
