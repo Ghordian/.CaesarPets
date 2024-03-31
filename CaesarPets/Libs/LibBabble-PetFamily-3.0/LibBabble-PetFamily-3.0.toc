@@ -1,0 +1,11 @@
+## Interface: 100207
+## LoadOnDemand: 1
+## Title: Lib: Babble-PetFamily-3.0
+## Notes: A library to help with localization of the output of GetStablePetInfo(), pet family.
+## Author: Ghordian
+## X-eMail: 
+## X-Category: Library
+## X-License: MIT
+
+LibStub\LibStub.lua
+lib.xml

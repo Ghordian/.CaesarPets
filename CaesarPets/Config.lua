@@ -11,11 +11,13 @@ local optGetter, optSetter
 do
 	function optGetter(info)
 		local key = info[#info]
+		--print("Getter; key; "..key.."; info; "..info);
 		return CaesarPets.db.profile[key]
 	end
 
 	function optSetter(info, value)
 		local key = info[#info]
+		--print("Setter; key; "..key.."; info; "..info);
 		CaesarPets.db.profile[key] = value
 		CaesarPets:Refresh()
 	end
@@ -61,8 +63,9 @@ local function getOptions()
 						},
 						nl2 = {
 							order = 5,
-							type = "description",
-							name = "",
+							type = "header",
+							--type = "description",
+							name = "Options button",
 						},
 						hideFrameButton = {
 							order = 6,
@@ -70,36 +73,65 @@ local function getOptions()
 							name = L.HideFrameButton,
 							width = "double",
 						},
-						nl3 = {
+						nl4 = {
 							order = 7,
-							type = "description",
-							name = "",
+							type = "header",
+							name = "Minimap button",
 							width = "double",
-						},
-						previewFrame = {
-							order = 8,
-							type = "execute",
-							name = L.PreviewFrame,
-							func = function()
-								PetStableFrame:Show()
-							end,
 						},
 						hideMinimap = {
-							order = 9,
+							order = 8,
 							type = "toggle",
 							name = L.HideMinimapButton,
-							width = "double",
+							--width = "double",
 							get = function(info) return CaesarPets.db.profile.minimap.hide; end,
 							set = function(info, v) 
 								CaesarPets.db.profile.minimap.hide = v; 
 								CaesarPets:Refresh();
 							end,
 						},
-						nl4 = {
+						nl3 = {
+							order = 9,
+							type = "header",
+							--type = "description",
+							name = L.PreviewPetStable,
+						},
+						previewFrame = {
 							order = 10,
-							type = "description",
-							name = "",
+							type = "execute",
+							name = L.PreviewFrame,
+							func = function()
+								PetStableFrame:Show()
+							end,
+						},
+						nl4 = {
+							order = 11,
+							type = "header",
+							name = L.ShowPetTalentColorized,
 							width = "double",
+						},
+						talentBorder = {
+							order = 12,
+							type = "toggle",
+							name = L.TalentBorder,
+							width = "double",
+							get = function(info) return CaesarPets.db.profile.talentBorder.show; end,
+							set = function(info, v) 
+								CaesarPets.db.profile.talentBorder.show = v; 
+								CaesarPets:Refresh();
+							end,
+						},
+						thicknessBorder = {
+							order = 13,
+							name = L.ThicknessBorder,
+							desc = L.ThicknessBorderDesc,
+							type = "range",
+							min = 1.0, max = 4, bigStep = 0.5,
+							get = function(info) return CaesarPets.db.profile.talentBorder.thickness; end,
+							set = function(info, v) 
+								CaesarPets.db.profile.talentBorder.thickness = v; 
+								CaesarPets:Refresh();
+							end,
 						},
 					},
 				},
@@ -140,7 +172,7 @@ function CaesarPets:RegisterModuleOptions(name, optionTbl, displayName)
 end
 
 function CaesarPets:SetupFrameButton()
-	print("SetupFrameButton")
+	--print("SetupFrameButton")
 	-- create button on the frame to toggle the options
 	self.optionsButton = CreateFrame("Button", "StableOptionsButton", PetStableFrame.TitleContainer or PetStableFrame, "UIPanelButtonTemplate")
 	self.optionsButton:SetWidth(95)
@@ -176,7 +208,7 @@ end
 	-- [ ] QuestMapFrame
 		-- [ ] DetailsFrame
 
-function  CaesarPets:SetupExpandButton()
+function CaesarPets:SetupExpandButton()
 	--print("SetupExpandButton")
 	-- create button on the frame to expand/collapse
 	self.expandButton = CreateFrame("Button", "StableExpandButton", PetStableFrame.TitleContainer or PetStableFrame, "UIPanelButtonTemplate")

@@ -1,15 +1,16 @@
-## Interface: 100107
+## Interface: 100206
 ## Title: CaesarPets
-## Version: 10.1.07.008.1
+## Version: 10.2.06.011.1
 ## Idea: Cybeloras of Aerie Peak
 ## SavedVariables: CaesarPetsDB
 ## Author: Ghordian
+## Co-Author: JManel
 ## X-Category: Hunter
 ## Notes: Condenses your stabled pets onto one single page.
 ## X-License: All rights reserved.
-## X-Curse-Project-ID: 0
+## X-Curse-Project-ID: 922620
 ## X-WoWI-ID: 26641
-## X-Wago-ID: 0
+## X-Wago-ID: BKpqMPGE
 
 ### LoadManagers: AddonLoader
 ### X-LoadOn-Execute: PetStableFrame:HookScript("OnShow", function() if not IsAddOnLoaded("CaesarPets") then AddonLoader:LoadAddOn("CaesarPets") end end)
@@ -34,6 +35,12 @@ Libs\AceConfig-3.0\AceConfig-3.0.xml
 
 Libs\LibWindow-1.1\LibWindow-1.1.lua
 Libs\LibDBIcon-1.0\LibDBIcon-1.0.lua
+
+Libs\LibBabble-3.0\LibBabble-3.0.lua
+#Libs\LibBabble-CreatureType-3.0\LibBabble-CreatureType-3.0.lua
+Libs\LibBabble-PetFamily-3.0\LibBabble-PetFamily-3.0.lua
+
+#Libs\LibMVC-1.0\"LibMVC-1.0.lua
 #@end-no-lib-strip@
 
 Locale\locale.xml
@@ -43,3 +50,5 @@ CaesarPets.lua
 Config.lua
 
 Scaling.lua
+
+#HunterBooks.lua

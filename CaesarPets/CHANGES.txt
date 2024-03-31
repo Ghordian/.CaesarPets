@@ -1,39 +1,67 @@
-Author: Ghordian
+Author: Ghordian/JManel
 Date:   Aug 11 2023
+Rev:    10.1.07.003
 
     - TOC bump
     - Added InfoPanel to show statistical info 
 
-Author: Ghordian
+Author: Ghordian/JManel
 Date:   Aug 12 2023
+Rev:    10.1.07.004
 
     - Added SearchInfo to show found info 
     - Moved InfoPanel to the bottom-right frame
 
-Author: Ghordian
+Author: Ghordian/JManel
 Date:   Aug 20 2023
+Rev:    10.1.07.005
 
-	- Migrated to ACE3 adddon
+    - Migrated to ACE3 adddon
     - Added movable option
     - Added scale option
-	- Added profile option
-	- Added config option
+    - Added profile option
+    - Added config option
 
-Author: Ghordian
+Author: Ghordian/JManel
 Date:   Aug 23 2023
+Rev:    10.1.07.006
 
     - Added minimap button
     - Added preview button
-	- Renamed as CaesarPets
+    - Renamed as CaesarPets
 
-Author: Ghordian
+Author: Ghordian/JManel
 Date:   Sep 07 2023
+Rev:    10.1.07.007
 
-	- Modified for v10.1.7
+    - Modified for v10.1.7
     - TOC bump
 
-Author: Ghordian
+Author: Ghordian/JManel
 Date:   Oct 12 2023
+Rev:    10.1.07.008
 
     - Added Expand/Collapse button
     - SinglePage shown on the right
+
+Author: Ghordian/JManel
+Date:   Nov 03 2023
+Rev:    10.1.07.009
+
+    - **Added Hunter's Book Journal**
+
+Author: Ghordian/JManel
+Date:   Feb 19 2024
+Rev:    10.2.05.010
+
+    - Modified for v10.2.5
+    - TOC bump
+
+Author: Ghordian/JManel
+Date:   Mar 31 2024
+Rev:    10.2.06.011
+
+    - Modified for v10.2.6
+    - TOC bump
+    - Added highlight petclass(talent) by colors
+

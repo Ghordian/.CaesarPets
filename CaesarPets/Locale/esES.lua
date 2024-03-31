@@ -25,5 +25,26 @@ L.MinimapHint = "Clic-Izq. para %sMascotas\n"
 			 .. "Clic-Der. para %sOpciones"
 
 L.HideMinimapButton = "Hide minimap button"
+L.PreviewPetStable = "Vista previa del Maestro de Establos";
 
 L.PetsFound = "Encontradas: %d"
+
+L.ShowPetTalentColorized = "Mostrar tipo de mascota coloreado";
+L.TalentBorder = "Mostrar marco coloreado";
+L.ThicknessBorder = "Grosor del marco";
+L.ThicknessBorderDesc = "Grosor del marco";
+
+-- specs 
+
+L["Tenacity"] = "Tenacidad";
+L["Cunning"]  =  "Astucia";
+L["Ferocity"] = "Ferocidad";
+L["Exotic"]   = "Exótica";
+
+--[[
+-- specs esMX
+
+L["Tenacity"] = "Tenacidad";
+L["Cunning"]  =  "Astucia";
+L["Ferocity"] = "Ferocidad";
+--]]
