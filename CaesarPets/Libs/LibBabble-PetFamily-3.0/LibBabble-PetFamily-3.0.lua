@@ -1,6 +1,6 @@
 --[[
 Name: LibBabble-PetFamily-3.0
-Revision: $Rev: 1 $
+Revision: $Rev: 2 $
 Maintainers: 
 Website: 
 Dependencies: None
@@ -76,7 +76,7 @@ lib:SetBaseTranslations {
 	["Waterfowl"] = "Waterfowl",
 	["Wind Serpent"] = "Wind Serpent",
 	["Wolf"] = "Wolf",
-	["Worm"] = "Worm",
+	["Worm"] = "Worm"
 }
 
 if GAME_LOCALE == "enUS" then
@@ -91,7 +91,7 @@ elseif GAME_LOCALE == "esES" then
 	["Beetle"] = "Alfazaque",
 	["Bird of Prey"] = "Ave rapaz",
 	["Blood Beast"] = "Bestia de sangre",
-	["Boar"] = "Jabal�",
+	["Boar"] = "Jabalí",
 	["Camel"] = "Camello",
 	["Carapid"] = "Carápido",
 	["Carrion Bird"] = "Carroñero",
@@ -129,7 +129,7 @@ elseif GAME_LOCALE == "esES" then
 	["Scorpid"] = "Escórpido",
 	["Serpent"] = "Serpiente",
 	["Shale Beast"] = "Bestia de esquisto",
-	["Spider"] = "Ara�a",
+	["Spider"] = "Araña",
 	["Spirit Beast"] = "Bestia espíritu",
 	["Sporebat"] = "Esporiélago",
 	["Stag"] = "Venado",
@@ -143,35 +143,148 @@ elseif GAME_LOCALE == "esES" then
 	["Waterfowl"] = "Ave fluvial",
 	["Wind Serpent"] = "Dragón alado",
 	["Wolf"] = "Lobo",
-	["Worm"] = "Gusano",
+	["Worm"] = "Gusano"
 }
 elseif GAME_LOCALE == "deDE" then
-	lib:SetCurrentTranslations {
-}
+	lib:SetCurrentTranslations(true)
 elseif GAME_LOCALE == "frFR" then
 	lib:SetCurrentTranslations {
+	["Aqiri"] = "Aqir",
+	["Basilisk"] = "Basilic",
+	["Bat"] = "Chauve-souris",
+	["Bear"] = "Ours",
+	["Beetle"] = "Hanneton",
+	["Bird of Prey"] = "Oiseau de proie",
+	["Blood Beast"] = "Bête de sang",
+	["Boar"] = "Sanglier",
+	["Camel"] = "Dromadaire",
+	["Carapid"] = "Carapide",
+	["Carrion Bird"] = "Charognard",
+	["Cat"] = "Félin",
+	["Chimaera"] = "Chimère",
+	["Clefthoof"] = "Sabot-fourchu",
+	["Core Hound"] = "Chien du magma",
+	["Courser"] = "Coursier",
+	["Crab"] = "Crabe",
+	["Crocolisk"] = "Crocilisque",
+	["Devilsaur"] = "Diablosaure",
+	["Direhorn"] = "Navrecorne",
+	["Dragonhawk"] = "Faucon-dragon",
+	["Feathermane"] = "Crin-de-plume",
+	["Fox"] = "Renard",
+	["Gorilla"] = "Gorille",
+	["Gruffhorn"] = "Raucorne",
+	["Hound"] = "Molosse",
+	["Hydra"] = "Hydre",
+	["Hyena"] = "Hyène",
+	["Lesser Dragonkin"] = "Draconien inférieur",
+	["Lizard"] = "Lézard",
+	["Mammoth"] = "Mammouth",
+	["Mechanical"] = "Mécanique",
+	["Monkey"] = "Singe",
+	["Moth"] = "Phalène",
+	["Oxen"] = "Bovin",
+	["Pterrordax"] = "Pterreurdactyle",
+	["Raptor"] = "Raptor",
+	["Ravager"] = "Ravageur",
+	["Ray"] = "Raie",
+	["Riverbeast"] = "Potamodonte",
+	["Rodent"] = "Rongeur",
+	["Scalehide"] = "Peau écailleuse",
+	["Scorpid"] = "Scorpide",
+	["Serpent"] = "Serpent",
+	["Shale Beast"] = "Bête de schiste",
+	["Spider"] = "Araignée",
+	["Spirit Beast"] = "Esprit de bête",
+	["Sporebat"] = "Sporoptère",
+	["Stag"] = "Cerf",
+	["Stone Hound"] = "Molosse de pierre",
+	["Tallstrider"] = "Haut-trotteur",
+	["Toad"] = "Crapaud",
+	["Turtle"] = "Tortue",
+	["Warp Stalker"] = "Traqueur dim.",
+	["Wasp"] = "Guêpe",
+	["Water Strider"] = "Trotteur aquatique",
+	["Waterfowl"] = "Canard",
+	["Wind Serpent"] = "Serpent des vents",
+	["Wolf"] = "Loup",
+	["Worm"] = "Ver"
 }
 elseif GAME_LOCALE == "koKR" then
-	lib:SetCurrentTranslations {
-}
+	lib:SetCurrentTranslations(true)
 elseif GAME_LOCALE == "esMX" then
-	lib:SetCurrentTranslations {
-}
+	lib:SetCurrentTranslations(true)
 elseif GAME_LOCALE == "ptBR" then
-	lib:SetCurrentTranslations {
-}
+	lib:SetCurrentTranslations(true)
 elseif GAME_LOCALE == "itIT" then
 	lib:SetCurrentTranslations {
+	["Aqiri"] = "Aqiri",
+	["Basilisk"] = "Basilisco",
+	["Bat"] = "Pipistrello",
+	["Bear"] = "Orso",
+	["Beetle"] = "Scarabeo",
+	["Bird of Prey"] = "Rapace",
+	["Blood Beast"] = "Bestia di Sangue",
+	["Boar"] = "Cinghiale",
+	["Camel"] = "Dromedario",
+	["Carapid"] = "Carapide",
+	["Carrion Bird"] = "Mangiacarogne",
+	["Cat"] = "Felino",
+	["Chimaera"] = "Chimera",
+	["Clefthoof"] = "Mammuceronte",
+	["Core Hound"] = "Segugio del Nucleo",
+	["Courser"] = "Corsiero",
+	["Crab"] = "Granchio",
+	["Crocolisk"] = "Crocolisco",
+	["Devilsaur"] = "Gigantosauro",
+	["Direhorn"] = "Cornofurente",
+	["Dragonhawk"] = "Dragofalco",
+	["Feathermane"] = "Piumanto",
+	["Fox"] = "Volpe",
+	["Gorilla"] = "Gorilla",
+	["Gruffhorn"] = "Cornorude",
+	["Hound"] = "Segugio",
+	["Hydra"] = "Idra",
+	["Hyena"] = "Iena",
+	["Lesser Dragonkin"] = "Dragoide Minore",
+	["Lizard"] = "Lucertola",
+	["Mammoth"] = "Mammut",
+	["Mechanical"] = "Unità Meccanica",
+	["Monkey"] = "Scimmia",
+	["Moth"] = "Falena",
+	["Oxen"] = "Yak",
+	["Pterrordax"] = "Pterrordattilo",
+	["Raptor"] = "Raptor",
+	["Ravager"] = "Devastatore",
+	["Ray"] = "Pastinaca",
+	["Riverbeast"] = "Bestia dei Fiumi",
+	["Rodent"] = "Roditore",
+	["Scalehide"] = "Scagliamanto",
+	["Scorpid"] = "Scorpide",
+	["Serpent"] = "Serpente",
+	["Shale Beast"] = "Bestia Rocciosa",
+	["Spider"] = "Ragno",
+	["Spirit Beast"] = "Bestia Eterea",
+	["Sporebat"] = "Sporofago",
+	["Stag"] = "Cervo",
+	["Stone Hound"] = "Segugio di Pietra",
+	["Tallstrider"] = "Zampalunga",
+	["Toad"] = "Rospo",
+	["Turtle"] = "Tartaruga",
+	["Warp Stalker"] = "Segugio Distorcente",
+	["Wasp"] = "Vespa",
+	["Water Strider"] = "Gerride",
+	["Waterfowl"] = "Uccello Marino",
+	["Wind Serpent"] = "Serpente Volante",
+	["Wolf"] = "Lupo",
+	["Worm"] = "Verme"
 }
 elseif GAME_LOCALE == "ruRU" then
-	lib:SetCurrentTranslations {
-}
+	lib:SetCurrentTranslations(true)
 elseif GAME_LOCALE == "zhCN" then
-	lib:SetCurrentTranslations {
-}
+	lib:SetCurrentTranslations(true)
 elseif GAME_LOCALE == "zhTW" then
-	lib:SetCurrentTranslations {
-}
+	lib:SetCurrentTranslations(true)
 else
 	error(("%s: Locale %q not supported"):format(MAJOR_VERSION, GAME_LOCALE))
 end

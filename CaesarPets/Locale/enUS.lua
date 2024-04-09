@@ -22,35 +22,21 @@ L.TotalFmt = "Total: %d out of %d\n"
 L.Options = "Options..."
 
 L.MinimapHint = "Left-click to open Stable\n"
-			 .. "Right-click to open Options"
+             .. "Right-click to open Options"
 
 L.HideMinimapButton = "Hide minimap button"
 L.PreviewPetStable = "Preview Pet Stable"
 
 L.PetsFound = "Found: %d"
 
-L.ShowPetTalentColorized = "Show Pet Talent colorized";
-L.TalentBorder = "Show Color Border";
-L.ThicknessBorder = "Border thickness";
-L.ThicknessBorderDesc = "Border thickness";
+L.ShowPetTalentColorized = "Show Pet Talent colorized"
+L.TalentBorder = "Show Color Border"
+L.ThicknessBorder = "Border thickness"
+L.ThicknessBorderDesc = "Border thickness"
 
 -- specs
 
-L["Tenacity"] = true;
-L["Cunning"]  =  true;
-L["Ferocity"] = true;
-L["Exotic"]   = true;
-
---[[
-
-*deDE*
-L["Tenacity"] = "Hartnäckigkeit";
-L["Cunning"]  =  "Gerissenheit";
-L["Ferocity"] = "Wildheit";
-
-*frFR*
-L["Tenacity"] = "Ténacité";
-L["Cunning"]  =  "Ruse";
-L["Ferocity"] = "Férocité";
-
---]]
+L["Tenacity"] = true
+L["Cunning"]  =  true
+L["Ferocity"] = true
+L["Exotic"]   = true

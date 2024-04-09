@@ -1,6 +1,6 @@
 ## Interface: 100206
 ## Title: CaesarPets
-## Version: 10.2.06.011.1
+## Version: 10.2.06.012
 ## Idea: Cybeloras of Aerie Peak
 ## SavedVariables: CaesarPetsDB
 ## Author: Ghordian
@@ -37,7 +37,6 @@ Libs\LibWindow-1.1\LibWindow-1.1.lua
 Libs\LibDBIcon-1.0\LibDBIcon-1.0.lua
 
 Libs\LibBabble-3.0\LibBabble-3.0.lua
-#Libs\LibBabble-CreatureType-3.0\LibBabble-CreatureType-3.0.lua
 Libs\LibBabble-PetFamily-3.0\LibBabble-PetFamily-3.0.lua
 
 #Libs\LibMVC-1.0\"LibMVC-1.0.lua
@@ -50,5 +49,3 @@ CaesarPets.lua
 Config.lua
 
 Scaling.lua
-
-#HunterBooks.lua

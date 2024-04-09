@@ -2,7 +2,7 @@
 -- Please use the Localization App on WoWAce to Update this
 -- http://www.wowace.com/projects/CaesarPets/localization/
 
-local debug = false
+--local debug = false
 --[==[@debug@
 debug = true
 --@end-debug@]==]
@@ -27,3 +27,17 @@ L.MinimapHint = "右鍵打開獸欄\n"
 L.HideMinimapButton = "隱藏小地圖按鈕"
 
 L.PetsFound = "找到：%d"
+
+L.PreviewPetStable = "Preview Pet Stable"
+
+L.ShowPetTalentColorized = "Show Pet Talent colorized"
+L.TalentBorder = "Show Color Border"
+L.ThicknessBorder = "Border thickness"
+L.ThicknessBorderDesc = "Border thickness"
+
+-- specs
+
+L["Tenacity"] = true
+L["Cunning"]  =  true
+L["Ferocity"] = true
+L["Exotic"]   = true

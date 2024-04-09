@@ -65,3 +65,9 @@ Rev:    10.2.06.011
     - TOC bump
     - Added highlight petclass(talent) by colors
 
+Author: Ghordian/JManel
+Date:   apr 09 2024
+Rev:    10.2.06.012
+
+    - Added more location templates
+
